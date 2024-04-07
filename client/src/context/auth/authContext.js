@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        "http://localhost:8180/api/v1/user/register",
+        "https://findermentor.onrender.com/api/v1/user/register",
         {
           method: "POST",
           headers: {
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (userData) => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8180/api/v1/user/login", {
+      const response = await fetch("https://findermentor.onrender.com/api/v1/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
