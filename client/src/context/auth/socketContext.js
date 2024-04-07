@@ -9,7 +9,7 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
     try {
       if (currentId !== null) {
-        const socket = io("http://localhost:8180", {
+        const socket = io("https://findermentor.onrender.com", {
           query: {
             userId: currentId,
           },
