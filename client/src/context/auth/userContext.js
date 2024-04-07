@@ -20,7 +20,7 @@ export const DetailProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8180/api/v1/user/profile/${id}`,
+        `https://findermentor.onrender.com/api/v1/user/profile/${id}`,
         {
           method: "PUT",
           headers: {
@@ -46,7 +46,7 @@ export const DetailProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8180/api/v1/user/profile/${id}`,
+        `https://findermentor.onrender.com/api/v1/user/profile/${id}`,
         {
           method: "GET",
           headers: {
@@ -72,7 +72,7 @@ export const DetailProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8180/api/v1/user/suggestions/${id}`,
+        `https://findermentor.onrender.com/api/v1/user/suggestions/${id}`,
         {
           method: "GET",
           headers: {
@@ -99,7 +99,7 @@ export const DetailProvider = ({ children }) => {
     try {
       console.log(id1, id2);
       const response = await fetch(
-        `http://localhost:8180/api/v1/user/messages/send/${id1}/${id2}`,
+        `https://findermentor.onrender.com/api/v1/user/messages/send/${id1}/${id2}`,
         {
           method: "POST",
           headers: {
@@ -126,7 +126,7 @@ export const DetailProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8180/api/v1/user/messages/${id1}/${id2}`,
+        `https://findermentor.onrender.com/api/v1/user/messages/${id1}/${id2}`,
         {
           method: "GET",
           headers: {
@@ -151,7 +151,7 @@ export const DetailProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8180/api/v1/user/feedback/${id}`,
+        `https://findermentor.onrender.com/api/v1/user/feedback/${id}`,
         {
           method: "POST",
           headers: {
