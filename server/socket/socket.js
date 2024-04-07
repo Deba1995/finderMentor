@@ -6,12 +6,7 @@ import express from 'express'
 const app = express()
 const userSocketMap = {}
 const server = http.createServer(app)
-const io = new Server(server, {
-  cors: {
-    origin: ['http://localhost:3000'],
-    methods: ['GET', 'POST']
-  }
-})
+const io = new Server(server)
 
 export const getReceiverSocketId = (receiverId) => {
   return userSocketMap[receiverId]
